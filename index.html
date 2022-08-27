@@ -17,159 +17,90 @@
 <body>
     <main>
         <section class="summary pagebreak">
-            <h1 class="maintitle">$\textbf{CCF}$ 全国青少年信息学奥林匹克连赛</h1>
-            <h1 class="subtitle">$\text{CCF NOIP 114514}$</h1>
-            <h2 class="time">时间: $1919$ 年 $08$ 月 $10$ 日 $08:30 \sim 13:00$</h2>
+            <h1 class="maintitle">{{=it.title}}</h1>
+            <h1 class="subtitle">{{=it.subtitle}}</h1>
+            <h2 class="time">{{=it.time_title}}</h2>
             <table>
                 <tr>
                     <th>题目名称</th>
-                    <td>先辈</td>
-                    <td>反贼</td>
-                    <td>先辈</td>
-                    <td>反贼</td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.name}}</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>题目类型</th>
+                    {{~ it.problems :p }}
                     <td>传统型</td>
-                    <td>传统型</td>
-                    <td>传统型</td>
-                    <td>传统型</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>目录</th>
-                    <td>
-                        <pre>senpai</pre>
-                    </td>
-                    <td>
-                        <pre>rebel</pre>
-                    </td>
-                    <td>
-                        <pre>senpai</pre>
-                    </td>
-                    <td>
-                        <pre>rebel</pre>
-                    </td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.filename}}</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>可执行文件名</th>
-                    <td>
-                        <pre>senpai</pre>
-                    </td>
-                    <td>
-                        <pre>rebel</pre>
-                    </td>
-                    <td>
-                        <pre>senpai</pre>
-                    </td>
-                    <td>
-                        <pre>rebel</pre>
-                    </td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.filename}}</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>输入文件名</th>
-                    <td>
-                        <pre>senpai.in</pre>
-                    </td>
-                    <td>
-                        <pre>rebel.in</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.in</pre>
-                    </td>
-                    <td>
-                        <pre>rebel.in</pre>
-                    </td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.filename}}.in</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>输出文件名</th>
-                    <td>
-                        <pre>senpai.out</pre>
-                    </td>
-                    <td>
-                        <pre>rebel.out</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.out</pre>
-                    </td>
-                    <td>
-                        <pre>rebel.out</pre>
-                    </td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.filename}}.out</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>每个测试点时限</th>
-                    <td>1.0 秒</td>
-                    <td>1.0 秒</td>
-                    <td>1.0 秒</td>
-                    <td>1.0 秒</td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.time_limit}} 秒</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>内存限制</th>
-                    <td>512 MiB</td>
-                    <td>512 MiB</td>
-                    <td>512 MiB</td>
-                    <td>512 MiB</td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.memory_limit}} MiB</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>子任务数目</th>
-                    <td>10</td>
-                    <td>15</td>
-                    <td>10</td>
-                    <td>15</td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.subtask}}</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>测试点是否等分</th>
+                    {{~ it.problems :p }}
                     <td>是</td>
-                    <td>是</td>
-                    <td>是</td>
-                    <td>是</td>
+                    {{~}}
                 </tr>
             </table>
             <p class="para">提交源程序文件名</p>
             <table>
                 <tr>
                     <th>对于 C++ 语言</th>
-                    <td>
-                        <pre>senpai.cpp</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.cpp</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.cpp</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.cpp</pre>
-                    </td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.filename}}.cpp</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>对于 C 语言</th>
-                    <td>
-                        <pre>senpai.c</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.c</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.c</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.c</pre>
-                    </td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.filename}}.c</td>
+                    {{~}}
                 </tr>
                 <tr>
                     <th>对于 Pascal 语言</th>
-                    <td>
-                        <pre>senpai.pas</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.pas</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.pas</pre>
-                    </td>
-                    <td>
-                        <pre>senpai.pas</pre>
-                    </td>
+                    {{~ it.problems :p }}
+                    <td>{{=p.frontmatter.filename}}.pas</td>
+                    {{~}}
                 </tr>
             </table>
 
@@ -195,52 +126,16 @@
                 </tr>
             </table>
             <p class="para"><b>注意事项（请仔细阅读）</b></p>
-            <ol>
-                <li>文件名（程序名和输入输出文件名）必须使用英文小写。</li>
-                <li>C/C++ 中函数 main() 的返回值类型必须是 int，程序正常结束时的返回值必须是 0。</li>
-                <li>提交的程序代码文件的放置位置请参考各省的具体要求。</li>
-                <li>因违反以上三点而出现的错误或问题，申述时一律不予受理。</li>
-                <li>若无特殊说明，结果的比较方式为全文比较（过滤行末空格及文末回车）。</li>
-                <li>程序可使用的栈空间内存限制与题目的内存限制一致。</li>
-                <li>全国统一评测时采用的机器配置为：Inter(R) Core(TM) i7-8700K CPU @3.70GHz，内存 32GB。上述时限以此配置为准。</li>
-                <li>只提供 Linux 格式附加样例文件。</li>
-                <li>评测在当前最新公布的 NOI Linux 下进行，各语言的编译器版本以此为准。</li>
-            </ol>
+            {{=it.attentionMd}}
         </section>
+        {{~ it.problems :p }}
         <section class="problem pagebreak">
-            <h2>报数 (number)</h2>
-            <h3 class="para">【题目描述】</h3>
-            <p>
-                例如，如果小 $r$ 报出了 $6$ ，由于 $7$ 不能报，所以小 $z$ 下一个需要报 $8$ ；如果小 $r$ 报出了 $33$ ，
-                则由于 $34=17\times 2$ ，$35=7\times 5$ 都不能报，小 $z$ 下一个需要报出 $36$ ；如果
-                小 $r$ 报出了 $69$ ，由于 $70\sim 79$ 的数都含有$7$ ，小 $z$ 下一个需要报出 $80$ 才行。
-            </p>
-            <h3 class="para">【样例 1 输入】</h3>
-            <pre class="example">
-4
-6
-9
-33
-60
-            </pre>
+            <h2>{{=p.frontmatter.name}}</h2>
+            <div class="problem-body">
+                {{=p.html}}
+            </div>
         </section>
-        <section class="problem pagebreak">
-            <h2>报数 (number)</h2>
-            <h3 class="para">【题目描述】</h3>
-            <p>
-                例如，如果小 $r$ 报出了 $6$ ，由于 $7$ 不能报，所以小 $z$ 下一个需要报 $8$ ；如果小 $r$ 报出了 $33$ ，
-                则由于 $34=17\times 2$ ，$35=7\times 5$ 都不能报，小 $z$ 下一个需要报出 $36$ ；如果
-                小 $r$ 报出了 $69$ ，由于 $70\sim 79$ 的数都含有$7$ ，小 $z$ 下一个需要报出 $80$ 才行。
-            </p>
-            <h3 class="para">【样例 1 输入】</h3>
-            <pre class="example">
-1
-1
-4
-51
-4
-            </pre>
-        </section>
+        {{~}}
     </main>
 </body>
 

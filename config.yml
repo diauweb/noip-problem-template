@@ -1,0 +1,11 @@
+problems:
+  - number.md
+  # - sequence.md
+  # - variance.md
+  # - chess.md
+
+title: '$\textbf{CCF}$ 全国青少年信息学奥林匹克连赛'
+subtitle: '$\text{CCF NOIP 2021}$'
+time_title: '时间: $2021$ 年 $11$ 月 $20$ 日 $08:30 \sim 11:30$'
+
+attention: attention.md

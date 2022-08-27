@@ -58,7 +58,7 @@ table pre {
     }
 }
 
-pre.example {
+.problem-body pre {
     border: blue solid 1px;
     padding-top: 0.5em;
     padding-left: 0.2em;
