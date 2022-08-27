@@ -1,0 +1,15 @@
+{
+  "name": "noip-problem-template",
+  "version": "1.0.0",
+  "description": "Generate NOIP-Like Problem Template",
+  "main": "index.js",
+  "author": "Xiaodai Dai <diauweb@live.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "remark": "^14.0.2",
+    "remark-directive": "^2.0.1",
+    "unist-util-visit": "^4.1.1"
+  },
+  "type": "module"
+}
